@@ -41,6 +41,7 @@ export default function Contacts (){
           name="email"
           onChange={handleInputChange}
           type="email"
+          required
           placeholder="email"
         />
          <input
@@ -51,6 +52,11 @@ export default function Contacts (){
         <textarea placeholder="Your Message Here"></textarea>
 
         </form>
+        {errorMessage && (
+                <div>
+                    <p className='error-text'>{errorMessage}</p>
+                    </div>
+            )}
     </div>
   )
 

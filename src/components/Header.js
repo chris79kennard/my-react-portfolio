@@ -14,32 +14,32 @@ export default function Header (){
     image: '../images/Project1image.PNG',
     githubURL: '',
   };
-  // const projectTwo = {
-  //   name: 'Sweepers',
-  //   descripton: '',
-  //   image:'../../images/sweeper.png',
-  // };
-  // const projectThree = {
-  //   name: '',
-  //   descripton: '',
-  //   image:'',
-  // };
+  const projectTwo = {
+    name: 'Pipe Dreams',
+    descripton: 'Find Gas near you regardless of where you are',
+    image:'../../images/project2.PNG',
+  };
+  const projectThree = {
+    name: 'Password Generator',
+    descripton: 'This make a random password for you',
+    image:'../../images/project3.PNG',
+  };
 
-  // const projectFour = {
-  //   name: '',
-  //   descripton: '',
-  //   image:'',
-  // };
-  // const projectFive = {
-  //   name: '',
-  //   descripton: '',
-  //   image:'',
-  // };
-  // const projectSix = {
-  //   name: '',
-  //   descripton: '',
-  //   image:'',
-  // };
+  const projectFour = {
+    name: 'Dragon Ball Z Fan Quiz',
+    descripton: 'Quick Quiz Game regarding Dragon Ball Z questions',
+    image:'../../images/project4.PNG',
+  };
+  const projectFive = {
+    name: 'Weather Dashboard',
+    descripton: 'Check the daily and weekly weather no matter where you are',
+    image:'../../images/project5.PNG',
+  };
+  const projectSix = {
+    name: 'E--Commerce-Back-End',
+    descripton: 'This is a CRUD implementation exercise.',
+    image:'../../images/project6.png',
+  };
 
     const [currentPage, setCurrentPage] = useState('Aboutme');
   
@@ -53,12 +53,11 @@ export default function Header (){
         <div>
     {/* TODO CHANGE PROJECT ONE TO 123456 */}
           <Projects project={projectOne}/>
-        <Projects project={projectOne}/>
-        <Projects project={projectOne}/>
-        <Projects project={projectOne}/>
-        <Projects project={projectOne}/>
-        <Projects project={projectOne}/>
-        <Projects project={projectOne}/>
+        <Projects project={projectTwo}/>
+        <Projects project={projectThree}/>
+        <Projects project={projectFour}/>
+        <Projects project={projectFive}/>
+        <Projects project={projectSix}/>
         </div>);
       }
       if (currentPage === 'Resume') {

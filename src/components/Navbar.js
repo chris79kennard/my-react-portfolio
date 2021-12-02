@@ -4,9 +4,9 @@ import "./Styles/Navbar.css"
 
 export default function Navbar ({currentPage, handlePageChange}){
   return (
-    <div>
-       <ul className="nav nav-tabs">
-      <li className="nav-item">
+    <div id="navBar">
+       <ul className="nav nav-tabs" >
+      <li className="nav-item" className="ulList">
         <a
           href="#Aboutme"
           onClick={() => handlePageChange('Aboutme')}
@@ -18,7 +18,7 @@ export default function Navbar ({currentPage, handlePageChange}){
 
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item ulList"  >
         <a
           href="#projects"
           onClick={() => handlePageChange('Projects')}
@@ -28,7 +28,7 @@ export default function Navbar ({currentPage, handlePageChange}){
           Projects
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item ulList">
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
@@ -39,7 +39,7 @@ export default function Navbar ({currentPage, handlePageChange}){
 
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item ulList">
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
