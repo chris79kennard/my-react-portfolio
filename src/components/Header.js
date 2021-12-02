@@ -7,9 +7,41 @@ import Footer from "./Footer"
 import Navbar from "./Navbar"
 
 
-
 export default function Header (){
-    const [currentPage, setCurrentPage] = useState('Home');
+  const projectOne = {
+    name: 'Dynamite Recipes',
+    descripton: 'Find recipes with what you have on hand application',
+    image: '../images/Project1image.PNG',
+    githubURL: '',
+  };
+  // const projectTwo = {
+  //   name: 'Sweepers',
+  //   descripton: '',
+  //   image:'../../images/sweeper.png',
+  // };
+  // const projectThree = {
+  //   name: '',
+  //   descripton: '',
+  //   image:'',
+  // };
+
+  // const projectFour = {
+  //   name: '',
+  //   descripton: '',
+  //   image:'',
+  // };
+  // const projectFive = {
+  //   name: '',
+  //   descripton: '',
+  //   image:'',
+  // };
+  // const projectSix = {
+  //   name: '',
+  //   descripton: '',
+  //   image:'',
+  // };
+
+    const [currentPage, setCurrentPage] = useState('Aboutme');
   
     // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
     const renderPage = () => {
@@ -17,7 +49,17 @@ export default function Header (){
         return <Aboutme />;
       }
       if (currentPage === 'Projects') {
-        return <Projects />;
+        return (
+        <div>
+    {/* TODO CHANGE PROJECT ONE TO 123456 */}
+          <Projects project={projectOne}/>
+        <Projects project={projectOne}/>
+        <Projects project={projectOne}/>
+        <Projects project={projectOne}/>
+        <Projects project={projectOne}/>
+        <Projects project={projectOne}/>
+        <Projects project={projectOne}/>
+        </div>);
       }
       if (currentPage === 'Resume') {
         return <Resume />;
