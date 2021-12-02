@@ -1,0 +1,18 @@
+#gitHub {
+  padding: 1rem;
+  color: tomato;
+
+}
+
+#gitHub:hover {
+  color: white;
+}
+
+#linkedIn:hover {
+  color: white;
+}
+
+#linkedIn {
+  padding: 1rem;
+  color: tomato
+}
