@@ -51,7 +51,7 @@ export default function Header (){
       if (currentPage === 'Projects') {
         return (
         <div>
-    {/* TODO CHANGE PROJECT ONE TO 123456 */}
+   
           <Projects project={projectOne}/>
         <Projects project={projectTwo}/>
         <Projects project={projectThree}/>
